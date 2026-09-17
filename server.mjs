@@ -1,7 +1,7 @@
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
-const files = {'/':'index.html','/app.js':'app.js','/style.css':'style.css','/model.js':'model.js'};
-const types = {html:'text/html',js:'text/javascript',css:'text/css'};
+const files = {'/':'index.html','/app.js':'app.js','/style.css':'style.css','/hopkins-theme.css':'hopkins-theme.css','/fonts/hopkins-slab-regular.otf':'fonts/hopkins-slab-regular.otf','/fonts/hopkins-slab-semibold.otf':'fonts/hopkins-slab-semibold.otf','/fonts/hopkins-slab-bold.otf':'fonts/hopkins-slab-bold.otf','/model.js':'model.js'};
+const types = {html:'text/html',js:'text/javascript',css:'text/css',otf:'font/otf'};
 http.createServer(async (req,res) => {
   const file = files[new URL(req.url,'http://localhost').pathname];
   if (!file) { res.writeHead(404); return res.end('Not found'); }
