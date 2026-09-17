@@ -31,3 +31,25 @@ export const daily = [
  ['How restorative was your sleep?',['Not at all','A little','Somewhat','Mostly','Very']],
  ['How well have you been able to meet your food and hydration needs today?',['Not at all','A little','Somewhat','Mostly','Fully']]
 ];
+export const monthlyDimensions = ['Emotional wellbeing','Academic impact','Social connection','Support system','Academic workload','Academic pressure','Sleep','Food and hydration','Financial pressure','Campus connection','Comfort sharing','Healthy coping'];
+export const monthly = [
+ daily[0],
+ [background[3][0],[...background[3][1]].reverse()],
+ [background[4][0],[...background[4][1]].reverse()],
+ [background[5][0],[...background[5][1]].reverse()],
+ [background[7][0],[...background[7][1]].reverse()],
+ [background[8][0],[...background[8][1]].reverse()],
+ [background[9][0],[...background[9][1]].reverse()],
+ daily[4],
+ [background[10][0],[...background[10][1]].reverse()],
+ [background[11][0],[...background[11][1]].reverse()],
+ [background[6][0],[...background[6][1]].reverse()],
+ [background[14][0],[...background[14][1]].reverse()]
+];
+export function monthlyScore(values) {
+  if (!Array.isArray(values) || values.length !== monthly.length || values.some(v=>!Number.isInteger(v)||v<0||v>4)) throw new Error('Monthly review answers must be 0 to 4');
+  return Math.round(values.reduce((a,b)=>a+b,0)/(monthly.length*4)*100);
+}
+export function monthlyDue(reviews, now=Date.now()) {
+  return !reviews.length || now-new Date(reviews.at(-1).date).getTime() >= 28*86400000;
+}

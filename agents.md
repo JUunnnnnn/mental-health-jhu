@@ -3,6 +3,7 @@
 - Never commit or push directly to `main` (or `master`).
 - Make all changes on a named feature or fix branch.
 - Merge changes into the default branch only through a reviewed pull request. Never bypass review or force-push a shared branch.
+- After committing a feature branch, ask the user whether they would like a pull request created.
 - Preserve other contributors' changes and existing project files.
 - Before proposing a pull request, run relevant checks and describe changes and limitations.
 - The web app lives in `web/`. Run `npm start` for localhost and `npm test` for checks. It uses Node.js with no third-party runtime dependencies.
