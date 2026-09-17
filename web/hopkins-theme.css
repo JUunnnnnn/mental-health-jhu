@@ -1,0 +1,28 @@
+/* Hopkins-inspired blue, sky-blue, and slab typography theme. */
+@font-face { font-family: "Hopkins Slab"; src: url("/fonts/hopkins-slab-regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Hopkins Slab"; src: url("/fonts/hopkins-slab-semibold.otf") format("opentype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Hopkins Slab"; src: url("/fonts/hopkins-slab-bold.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: swap; }
+
+:root { color: #12355b; background: #f5faff; --green: #005eb8; --muted: #54708c; --line: #d6e5f3; }
+body { background: #f5faff; font-family: "Hopkins Slab", "Roboto Slab", Georgia, serif; }
+body *, body button, body input, body textarea, body select { font-family: "Hopkins Slab", "Roboto Slab", Georgia, serif; }
+p { color: #58718c; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline-color: #4fb3e8; }
+.sidebar { background: #eaf5ff; border-color: #cfe3f4; }
+.campus, nav button, header, .date-tag, .card-label, .section-title > span, .muted, footer { color: #54708c; }
+nav button.active { background: #d3ecff; color: #003d7a; }
+.little-flower, .next-icon, .empty-chart > span { color: #2389c9; }
+.private { border-color: #cfe3f4; color: #6d86a0; }
+.support-pill { border-color: #bcd8ee; color: #005eb8; }
+.eyebrow { color: #005eb8; }
+.hero { background: linear-gradient(135deg, #e6f5ff, #d7efff); border-color: #b9dcf3; }
+.primary { background: #005eb8; }
+.primary:hover { background: #003d7a; }
+.hero small { color: #4a7697; }
+.sun { background: #bde9ff; }.stem { background: #0067a9; }.leaf { background: #48aee4; }.l2 { background: #0879bd; }.l3 { background: #339ed8; }.l4 { background: #82cdf0; }.l5 { background: #167fbe; }.pot { background: #8dc9e8; border-top-color: #5aadd6; }.spark, .plant-note { color: #167fbe; }
+.score { color: #005eb8; }.score > span { color: #6d86a0; }.badge, .secondary { background: #e4f4ff; color: #005eb8; }.reminder, .next { background: #eef8ff; }.text-button { color: #005eb8; }
+.resource-links a { background: #e5f4ff; color: #005eb8; }
+select, textarea, .note-label > input { border-color: #c9e0f1; color: #12355b; }
+.toggle input, input[type=radio], progress { accent-color: #005eb8; }
+dialog { border-color: #c9e0f1; color: #12355b; background: #fbfdff; }dialog::backdrop { background: #002d526b; }.close { background: #e4f4ff; color: #005eb8; }
+.option { border-color: #c9e0f1; }.option:has(input:checked) { background: #e5f4ff; border-color: #4aa8df; }.safety-question { border-color: #cfe3f4; }
