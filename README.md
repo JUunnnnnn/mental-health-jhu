@@ -1,5 +1,5 @@
 
-# Bluejay
+# BlueJay
 
 - App name: BlueJay (or BlueJay Wellness)
 - Team members: Denis Motuzenko, Seojun Kwon, Josh Armedilla
@@ -9,6 +9,10 @@
 - We first built BlueJay in our respective development environments, committing to separate branches. All versions had common ground: the daily check-in feature, well-being score, and support resources. Comparing each member's app, we landed on the version with the most intuitive UI and UX. 
 - Based on the understanding that students would need to track their mental health over a longer term, we added a monthly review that compares mental health scores over time.
 - We added a Hopkins theme by changing the overall color of the app to light blue and changing some fonts to Hopkins Slab, so that Hopkins students can feel more comfortable using the app.
+
+**Live Deployment Link**
+https://mental-health-jhu-vercel.vercel.app/
+
 
 Disclaimer: This is an independent student prototype, not an official Johns Hopkins service. It supports self-reflection; it does not provide diagnosis, treatment, or a validated clinical assessment.
 
