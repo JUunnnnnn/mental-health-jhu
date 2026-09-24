@@ -1,9 +1,9 @@
 
 # Bluejay
 
-- App name: BlueJay (or BlueJay Wellness) \
-- Team members: Denis Motuzenko, Seojun Kwon, Josh Armedilla \
-- Problem being addressed: Bluejay is a wellbeing check-in app designed for first-year students at Johns Hopkins University. It gives students a place to reflect on daily life, track their self-reported wellbeing over time, and find support resources. \
+- App name: BlueJay (or BlueJay Wellness)
+- Team members: Denis Motuzenko, Seojun Kwon, Josh Armedilla
+- Problem being addressed: Bluejay is a wellbeing check-in app designed for first-year students at Johns Hopkins University. It gives students a place to reflect on daily life, track their self-reported wellbeing over time, and find support resources.
 
 This is an independent student prototype, not an official Johns Hopkins service. It supports self-reflection; it does not provide diagnosis, treatment, or a validated clinical assessment.
 
